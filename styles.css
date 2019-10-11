@@ -102,8 +102,50 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+
+.cardParagraph {
+  font-weight: 500;
+}
+
+.taxiProject {
+  display: flex;
+  justify-content: center;
+}
+
+.taxiCard {
+  display: inline-block;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: center;
+  background: #fff;
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.taxiCard2 {
+  
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 100%;
+  text-align: center;
+  background: rgb(180, 10, 10);
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.taxiCard2 h1{
+  color: black;
+}
+
+.taxiCard:hover {
+  border-color: #eb3f29;
+}
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #eb3f29;
 }
 
 ul.skills {
@@ -171,6 +213,29 @@ a.social:hover {
   clear: both;
 }
 
+
+/*  credit to w3 schools for the back to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+/*  End Of Back To Top Button */
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -183,6 +248,12 @@ a.social:hover {
       margin: 0 auto;
   }
 
+  @media only screen and (max-width: 400px) {
+    .taxiCard {
+      max-width: 360px;
+    }
+  }
+  
   header {
     min-height: 470px;
   }
@@ -201,6 +272,11 @@ a.social:hover {
     line-height: 1.6em;
   }
 
+  .exLink {
+    color: #030207;
+    font-weight: bolder;
+  }
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
@@ -209,3 +285,6 @@ a.social:hover {
 
 }
 
+.page2h1 {
+  color: black;
+}
